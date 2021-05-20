@@ -44,6 +44,7 @@ main section hr{
     width: 280px;
 }
 main:hover{
+     cursor: pointer;
     animation: hover-animation 1s both ,hover-animation-2 1s both alternate-reverse infinite;
 }
 @keyframes hover-animation {
