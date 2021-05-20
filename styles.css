@@ -1,0 +1,56 @@
+body{
+    background:url(./images/bg-pattern-bottom.svg) hsl(185, 75%, 39%);
+    perspective: 600px;
+}
+main{
+    height: 350px;
+    width: 300px;
+    background-color: white;
+    margin: 220px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 21px 0.5px hsl(0, 0%, 59%);
+}
+main section:first-child{
+    background: url(./images/bg-pattern-card.svg);
+    height: 130px;
+    border-radius: 10px 10px 0px 0px;
+}
+main section:nth-child(2){
+    display:grid ;
+}
+main section img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transform: translateY(-5px);
+    border: solid white 2px;
+    position: relative;
+    margin: auto;
+}
+
+main section dl{
+    display: flex;
+    gap: 50px;
+    margin-left: 30px;
+}
+main section:nth-child(2){
+    text-align: center;
+    margin-top: -50px;
+}
+span ,main section dl div dt:nth-child(2){
+    color: hsl(0, 0%, 59%);
+}
+main section hr{
+    width: 280px;
+}
+main:hover{
+    animation: hover-animation 1s both ,hover-animation-2 1s both alternate-reverse infinite;
+}
+@keyframes hover-animation {
+    0%{}
+    100%{transform: translateZ(100px);}
+}
+@keyframes hover-animation-2 {
+    0%{transform: translateZ(100px);}
+    100%{transform: translateZ(130px);}
+}
