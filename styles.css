@@ -44,9 +44,10 @@ main section hr{
     width: 280px;
 }
 main:hover{
-     cursor: pointer;
+    cursor: pointer;
     animation: hover-animation 1s both ,hover-animation-2 1s both alternate-reverse infinite;
 }
+@media (min-width:400px) {
 @keyframes hover-animation {
     0%{}
     100%{transform: translateZ(100px);}
@@ -54,4 +55,5 @@ main:hover{
 @keyframes hover-animation-2 {
     0%{transform: translateZ(100px);}
     100%{transform: translateZ(130px);}
+}
 }
